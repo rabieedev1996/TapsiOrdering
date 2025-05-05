@@ -28,11 +28,9 @@ public static class InfrastructureServiceRegistration
 
         services.AddScoped(typeof(IEmailService), typeof(EmailService));
         services.AddScoped(typeof(ISmsService), typeof(SmsService));
-        services.AddScoped(typeof(IReportService), typeof(ReportService));
         services.AddScoped(typeof(ILogService), typeof(LogService));
         services.AddScoped(typeof(IOrderRepository), typeof(OrderRepository));
         services.AddTransient<IFileService>(s => new FileService(configs));
-        services.AddTransient<IImageService>(s => new ImageService(configs));
         services.AddScoped(typeof(UserContext));
         services.AddScoped(typeof(DapperContext));
         services.AddScoped(typeof(ResponseGenerator));

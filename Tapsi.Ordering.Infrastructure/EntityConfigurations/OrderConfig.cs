@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Stimulsoft.Report.Dictionary;
 using Tapsi.Ordering.Domain.Entities.SQL;
 
 namespace Tapsi.Ordering.Infrastructure.EntityConfigurations;
